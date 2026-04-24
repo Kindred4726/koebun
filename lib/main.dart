@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
       routes: {
         Routes.settings: (context) => const SettingsPage(),
       },
-      home: const KoebunHomePage(title: 'Flutter Demo Home Page'),
+      home: const KoebunHomePage(title: 'Koebun Home Page'),
       debugShowCheckedModeBanner: false,
     );
   }

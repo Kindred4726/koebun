@@ -20,61 +20,62 @@ class SettingsPage extends StatelessWidget {
       backgroundColor: Color(0xff242424),
       body: Column(
         children: [
-          const SizedBox(height: 12),
-          Row(
-            children: [
-              const SizedBox(width: 12),
-              const Text("Voice Settings", style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),),
-            ], 
-          ),
           const SizedBox(height: 12,),
           Row(
             children: [
               const SizedBox(width: 12),
-              const Text("Input Sensitivity", style: TextStyle(color: Colors.white, fontSize: 20,),),
+              Icon(Icons.mic, color: Colors.white),
+              const SizedBox(width: 12),
+              const Text("Microphone Sensitivity", style: TextStyle(color: Colors.white, fontSize: 20,),),
             ],
           ),
           Row(
             children: [
-              const SizedBox(width: 12),
-              const Text("Appearance", style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),),
-            ], 
-          ),
+              const SizedBox(width: 48),
+              const Text("60%", style: TextStyle(color: Colors.white24, fontSize: 14,),),
+          ]),
           const SizedBox(height: 12,),
           Row(
             children: [
               const SizedBox(width: 12),
-              const Text("Text Font Size", style: TextStyle(color: Colors.white, fontSize: 20,),),
+              Icon(Icons.text_fields, color: Colors.white),
+              const SizedBox(width: 12),
+              const Text("Context Font Size", style: TextStyle(color: Colors.white, fontSize: 20,),),
             ],
           ),
+          Row(
+            children: [
+              const SizedBox(width: 48),
+              const Text("16 (default)", style: TextStyle(color: Colors.white24, fontSize: 14,),),
+          ]),
           const SizedBox(height: 12,),
           Row(
             children: [
               const SizedBox(width: 12),
-              const Text("Themes and Wallpapers", style: TextStyle(color: Colors.white, fontSize: 20,),),
+              Icon(Icons.text_fields, color: Colors.white),
+              const SizedBox(width: 12),
+              const Text("Transcript font Size", style: TextStyle(color: Colors.white, fontSize: 20,),),
             ],
           ),
+          Row(
+            children: [
+              const SizedBox(width: 48),
+              const Text("18 (default)", style: TextStyle(color: Colors.white24, fontSize: 14,),),
+          ]),
           const SizedBox(height: 12,),
           Row(
             children: [
               const SizedBox(width: 12),
-              const Text("Custom Wallpapers", style: TextStyle(color: Colors.white, fontSize: 20,),),
+              Icon(Icons.palette, color: Colors.white),
+              const SizedBox(width: 12),
+              const Text("Themes Settings", style: TextStyle(color: Colors.white, fontSize: 20,),),
             ],
           ),
-          const SizedBox(height: 12,),
           Row(
             children: [
-              const SizedBox(width: 12),
-              const Text("Dark Theme", style: TextStyle(color: Colors.white, fontSize: 20,),),
-            ],
-          ),
-          const SizedBox(height: 12,),
-          Row(
-            children: [
-              const SizedBox(width: 12),
-              const Text("Light Theme", style: TextStyle(color: Colors.white, fontSize: 20,),),
-            ],
-          ),
+              const SizedBox(width: 48),
+              const Text("Change the theme, wallpaper, etc.", style: TextStyle(color: Colors.white24, fontSize: 14,),),
+          ]),
         ]
       ),
     );
