@@ -249,30 +249,8 @@ class _SettingsPageState extends State<SettingsPage> {
                       "Clear All Transcripts",
                       style: TextStyle(color: Colors.white, fontSize: 20),
                     ),
-                  ],
-                ),
-              ),
-              const SizedBox(width: 18),
-            ],
-          ),
-          const SizedBox(height: 12),
-          Row(
-            children: [
-              const SizedBox(width: 12),
-              Icon(Icons.info, color: Colors.white, size: 30),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
-                    Text(
-                      "About",
-                      style: TextStyle(color: Colors.white, fontSize: 20),
-                    ),
-                    Text(
-                      "Koebun Stable v1.0.0",
-                      style: TextStyle(color: Colors.white24, fontSize: 14),
-                    ),
+                    Text("Delete all the stored transcripts",
+                        style: TextStyle(color: Colors.white24, fontSize: 14)),
                   ],
                 ),
               ),
@@ -318,6 +296,30 @@ class _SettingsPageState extends State<SettingsPage> {
                     isIncognito = value;
                   });
                 },
+              ),
+              const SizedBox(width: 18),
+            ],
+          ),
+          const SizedBox(height: 12),
+          Row(
+            children: [
+              const SizedBox(width: 12),
+              Icon(Icons.info, color: Colors.white, size: 30),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: const [
+                    Text(
+                      "About",
+                      style: TextStyle(color: Colors.white, fontSize: 20),
+                    ),
+                    Text(
+                      "Koebun Stable v1.0.0",
+                      style: TextStyle(color: Colors.white24, fontSize: 14),
+                    ),
+                  ],
+                ),
               ),
               const SizedBox(width: 18),
             ],
